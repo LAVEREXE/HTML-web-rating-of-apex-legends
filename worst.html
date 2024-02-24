@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends: Legends Tier List</title>
+    <style>
+		body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('wall.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px); /* Добавляем блюр к фону */
+            z-index: -1; /* Помещаем слой с блюром под содержимое страницы */
+        }
+        body {
+            font-family: Comic Sans MS, Comic Sans MS;
+            margin: 0;
+            padding: 0;
+            transition: backg	round 0.5s ease, filter 0.5s ease; /* Плавные переходы для фона и размытия */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+		 header {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-bottom: 2px solid #b00; /* Красно-бордовая линия внизу шапки */
+        }
+		header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+		header ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column; /* Отображаем элементы списка вертикально */
+			align-items: flex-end; /* Выравниваем элементы списка по правому краю */
+			position: relative;
+			z-index: 1; /* Помещаем список над слоем с блюром */
+		}
+
+
+        header li {
+            display: inline-block;
+            margin-right: 10px; /* Расстояние между кнопками */
+        }
+		header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+			width: 150px; /* Замените на нужную фиксированную ширину */
+        }
+
+        header a:hover {
+            transform: scale(1.1);
+        }
+        .gallery-item {
+			flex: 0 1 calc(34% - 38px); /* Устанавливаем ширину карточки в 34% с отступами между ними */
+            position: relative;
+            margin: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            text-align: center;
+			font-size: 14px;
+        }
+		header a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <ul>
+        <li><a id="osn-link">Лучшие легенды</a></li>
+        <li><a id="mid-link">Средние легенды</a></li>
+    </ul>
+	<img src="Apex.png" alt="Лого Апекса">
+	<div>Apex Legends: Рейтинг легенд</div>
+    <div>Вы сейчас находитесь на странице с худшими легендами на мой взгляд</div>
+</header>
+
+
+<div class="gallery-item">
+    <img src="Bangalore.jpg" alt="Бангалор">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Бангалор</h2>
+            <p>ТАКТИКА
+<br>Дымовая завеса
+<br>Описание Выстрелите высокоскоростной дымовой баллон, который при ударе взрывается, превращаясь в дымовую стену.
+<br>Время восстановления способности 33 секунд<br>
+<br>ПАССИВКА	
+<br>УСКОРЕННЫЙ МАРШ
+<br>Описание: Попадания по вам во время бега на короткое время увеличивает вашу скорость движения.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>РАССКАТЫ ГРОМА
+<br>Описание: Вызывает артиллерийский обстрел, который медленно продвигается по местности.
+<br>Время восстановления способности 4 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Mad_Maggie.jpg" alt="Безумная мегги">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Безумная мегги</h2>
+            <p>ТАКТИКА
+<br>БУР
+<br>Описание Выстрелите из пушки, которая пробуривает стену и сжигает врагов на другой стороне.
+<br>Время восстановления способности 22 секунды<br>
+<br>ПАССИВКА		
+<br>ОРУЖИЕ ВОЙНЫ
+<br>Описание: Временно подсвечивает врагов, которым вы нанесли урон. Двигайтесь быстрее с дробовиком.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>РАЗРУШИТЕЛЬНЫЙ ШАР
+<br>Описание: Бросьте шар, который высвобождает увеличивающие скорость подушечки и взрывается рядом с врагами.
+<br>Время восстановления способности 2 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Seer.jpg" alt="Сиар">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Сиар</h2>
+            <p>ТАКТИКА
+<br>ФОКУС ВНИМАНИЯ
+<br>Описание Призовите микродронов, чтобы они испускали электрический шок, который проходит сквозь стены, отключая у врагов способности и раскрывая их.
+<br>Время восстановления способности 30 секунд<br>
+<br>ПАССИВКА		
+<br>ИСКАТЕЛЬ СЕРДЦА
+<br>Описание: Слышите и визуализируйте сердцебиение врагов в радиусе 50 м при использовании прицела.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ЭКСПОЗИЦИЯ
+<br>Описание: Создайте сферу из микродронов, которые обнаруживают местоположение врагов, быстро передвигающихся или стреляющих из своего оружия.
+<br>Время восстановления способности 3 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.querySelector('#osn-link').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Здесь вы можете изменить фон и размытие для первого файла
+        document.body.style.transition = 'background 0.5s ease, filter 0.5s ease';
+
+        document.body.style.background = 'linear-gradient(to right, #924e45, #4e5f8b)'; /* Новый фон для первого файла */
+        document.body.style.filter = 'blur(5px)'; /* Новое размытие для первого файла */
+
+        setTimeout(function () {
+            window.location.href = 'osn.html'; // Переход на первый файл
+        }, 500); // 500 миллисекунд - время анимации
+    });
+
+    document.querySelector('#mid-link').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Здесь вы можете изменить фон и размытие для второго файла
+        document.body.style.transition = 'background 0.5s ease, filter 0.5s ease';
+
+        document.body.style.background = 'linear-gradient(to right, #924e45, #4e5f8b)'; /* Новый фон для второго файла */
+        document.body.style.filter = 'blur(8px)'; /* Новое размытие для второго файла */
+
+        setTimeout(function () {
+            window.location.href = 'mid.html'; // Переход на второй файл
+        }, 500);
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends: Legends Tier List</title>
+    <style>
+		body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('wall.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px); /* Добавляем блюр к фону */
+            z-index: -1; /* Помещаем слой с блюром под содержимое страницы */
+        }
+        body {
+            font-family: Comic Sans MS, Comic Sans MS;
+            margin: 0;
+            padding: 0;
+            transition: backg	round 0.5s ease, filter 0.5s ease; /* Плавные переходы для фона и размытия */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+		header {
+			width: 100%;
+			padding: 8px; /* Уменьшите значение padding, чтобы уменьшить высоту шапки */
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			border-bottom: 2px solid #b00;
+			position: relative;
+			z-index: 1;
+		}
+
+		header .header-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		header .header-text {
+			margin-bottom: 20px; /* Вы можете регулировать это значение для поднятия текста вверх */
+		}			
+		header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 70px;
+            height: auto;
+        }
+		header ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column; /* Отображаем элементы списка вертикально */
+			align-items: flex-end; /* Выравниваем элементы списка по правому краю */
+			position: relative;
+			z-index: 1; /* Помещаем список над слоем с блюром */
+		}
+        header li {
+            display: inline-block;
+            margin-right: 10px; /* Расстояние между кнопками */
+        }
+		header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+			width: 150px; /* Замените на нужную фиксированную ширину */
+        }
+
+        header a:hover {
+            transform: scale(1.1);
+        }
+        .gallery-item {
+			flex: 0 1 calc(25% - 25px); /* Устанавливаем ширину карточки в 25% с отступами между ними */
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        .overlay-content {
+            text-align: center;
+			font-size: 14px;
+        }
+		header a {
+            color: #fff;
+            text-decoration: none;
+        }
+		header .header-text {
+			position: relative;
+			top: -75px; /* Используйте отрицательное значение для поднятия текста вверх */
+			margin: 0 auto; /* Центрируем текст внутри шапки */
+			max-width: 600px; /* Устанавливаем максимальную ширину для текста */
+		}
+
+		.header-text h1 {
+			font-size: 24px;
+			margin: 0;
+		}
+    </style>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a id="worst-link">Худшие легенды</a></li>
+        <li><a id="osn-link">Лучшие легенды</a></li>
+    </ul>
+	<img src="Apex.png" alt="Лого Апекса">
+	<div class="header-content">
+	<div class="header-text">
+	<div>Apex Legends: Рейтинг легенд</div>
+    <div>Вы сейчас находитесь на странице со средними легендами на мой взгляд</div>
+</header>
+
+
+<div class="gallery-item">
+    <img src="Ballistic.jpg" alt="Балистик">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Балистик</h2>
+            <p>ТАКТИКА
+<br>НАГРЕВАТЕЛЬ
+<br>Описание: Выстреливает снаряд, который нагревает оружие противника во время стрельбы. Перегрев наносит урон. Удерживайте кнопку тактики для автонаведения.
+<br>Время восстановления способности 25 секунд<br>
+<br>ПАССИВКА	
+<br>СЛИНГ
+<br>Описание: Держите оружие в третьем слоте, на которое нельзя нацепить модификации.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ИСПЫТАНИЕ
+<br>Описание: При активации этого умения ближайшие товарищи по команде получают ускоренную перезарядку, скорость передвижения с оружием и бесконечные патроны. Оружие в 3ем слоте Баллистика будет экипировано и улучшено до золотого. 
+<br>Время восстановления способности 2 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+		
+<div class="gallery-item">
+    <img src="fuse.jpg" alt="Фьюз">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Фьюз</h2>
+            <p>ТАКТИКА
+<br>КАССЕТНАЯ БОМБА
+<br>Описание: Запустите кассетную бомбу, которая при ударе непрерывно выбрасывает взрывчатку.
+<br>Время восстановления способности 20 секунд<br>
+<br>ПАССИВКА	
+<br>ГРЕНАДЕР
+<br>Описание:  Укладывайте дополнительную гранату в каждый слот инвентаря. Стреляйте гранатами дальше, быстрее и точнее.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>СУДЬБА
+<br>Описание: Запустите бомбарду, которая окружит цель стеной пламени. 
+<br>Время восстановления способности 2 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Valkyrie.jpg" alt="Валькерия">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Валькерия</h2>
+            <p>ТАКТИКА
+<br>РОЙ РАКЕТ
+<br>Описание: Выпустите рой мини-ракет, которые наносят урон и дезориентируют противника.
+<br>Время восстановления способности 30 секунд<br>
+<br>ПАССИВКА	
+<br>РЕАКТИВНЫЙ РАНЕЦ
+<br>Описание: Нажмите клавишу прыжка в воздухе, чтобы задействовать реактивный ранец.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ПРЫЖОК В НЕБО
+<br>Описание: Нажмите один раз, чтобы подготовиться к запуску. Партнеры по команде могут взаимодействовать с Валькирией, чтобы присоединиться к запуску. Нажмите еще раз, чтобы подняться в воздух и прыгнуть с высоты.
+<br>Время восстановления способности 3 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="lifeline.jpg" alt="Лайфа">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Лайфлайн</h2>
+            <p>ТАКТИКА
+<br>ДРОН ИСЦЕЛЕНИЯ
+<br>Описание: Дрон исцеления (DOC) автоматически исцеляет тех, кто находится рядом с ним, в течение определенного времени.
+<br>Время восстановления способности 45 секунд<br>
+<br>ПАССИВКА	
+<br>ВОССТАНОВЛЕНИЕ БОЙЦА
+<br>Описание: Разверните D.O.C., чтобы оживить товарищей по команде, оставив Лайфлайн свободной для обороны.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ЦЕННЫЙ ГРУЗ
+<br>Описание: Вызовите дропшип, полный высококачественного защитного снаряжения.
+<br>Время восстановления способности 3.5 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('#osn-link').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Здесь вы можете изменить фон и размытие для первого файла
+        document.body.style.transition = 'background 0.5s ease, filter 0.5s ease';
+
+        document.body.style.background = 'linear-gradient(to right, #924e45, #4e5f8b)'; /* Новый фон для первого файла */
+        document.body.style.filter = 'blur(5px)'; /* Новое размытие для первого файла */
+
+        setTimeout(function () {
+            window.location.href = 'osn.html'; // Переход на первый файл
+        }, 500); // 500 миллисекунд - время анимации
+    });
+
+    document.querySelector('#worst-link').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Здесь вы можете изменить фон и размытие для второго файла
+        document.body.style.transition = 'background 0.5s ease, filter 0.5s ease';
+
+        document.body.style.background = 'linear-gradient(to right, #924e45, #4e5f8b)'; /* Новый фон для второго файла */
+        document.body.style.filter = 'blur(8px)'; /* Новое размытие для второго файла */
+
+        setTimeout(function () {
+            window.location.href = 'worst.html'; // Переход на второй файл
+        }, 500);
+    });
+</script>
+
+
+</body>
+</html>

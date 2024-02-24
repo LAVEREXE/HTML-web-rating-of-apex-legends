@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends: Legends Tier List</title>
+    <style>
+		body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('wall.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px); /* Добавляем блюр к фону */
+            z-index: -1; /* Помещаем слой с блюром под содержимое страницы */
+        }
+        body {
+            font-family: Comic Sans MS, Comic Sans MS;
+            margin: 0;
+            padding: 0;
+            transition: backg	round 0.5s ease, filter 0.5s ease; /* Плавные переходы для фона и размытия */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+		header {
+			width: 100%;
+			padding: 8px; /* Уменьшите значение padding, чтобы уменьшить высоту шапки */
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			border-bottom: 2px solid #b00;
+			position: relative;
+			z-index: 1;
+		}
+
+		header .header-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		header .header-text {
+			margin-bottom: 20px; /* Вы можете регулировать это значение для поднятия текста вверх */
+		}			
+		header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 70px;
+            height: auto;
+        }
+		header ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column; /* Отображаем элементы списка вертикально */
+			align-items: flex-end; /* Выравниваем элементы списка по правому краю */
+			position: relative;
+			z-index: 1; /* Помещаем список над слоем с блюром */
+		}
+        header li {
+            display: inline-block;
+            margin-right: 10px; /* Расстояние между кнопками */
+        }
+		header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+			width: 150px; /* Замените на нужную фиксированную ширину */
+        }
+
+        header a:hover {
+            transform: scale(1.1);
+        }
+        .gallery-item {
+			flex: 0 1 calc(25% - 25px); /* Устанавливаем ширину карточки в 25% с отступами между ними */
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        .overlay-content {
+            text-align: center;
+			font-size: 14px;
+        }
+		header a {
+            color: #fff;
+            text-decoration: none;
+        }
+		header .header-text {
+			position: relative;
+			top: -75px; /* Используйте отрицательное значение для поднятия текста вверх */
+			margin: 0 auto; /* Центрируем текст внутри шапки */
+			max-width: 600px; /* Устанавливаем максимальную ширину для текста */
+		}
+
+		.header-text h1 {
+			font-size: 24px;
+			margin: 0;
+		}
+    </style>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a id="worst-link">Худшие легенды</a></li>
+        <li><a id="mid-link">Средние легенды</a></li>
+    </ul>
+	<img src="Apex.png" alt="Лого Апекса">
+	<div class="header-content">
+	<div class="header-text">
+	<div>Apex Legends: Рейтинг легенд</div>
+    <div>Вы сейчас находитесь на странице с лучшими легендами на мой взгляд</div>
+</header>
+
+
+<div class="gallery-item">
+    <img src="crypto.jpg" alt="Крипто">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Крипто</h2>
+            <p>ТАКТИКА
+<br>БЕСПИЛОТНИК ДЛЯ НАБЛЮДЕНИЯ
+<br>Описание Разверните беспилотник с аэрофотосъемкой, который может удаленно взаимодействовать с обзорными маяками Survey Beacon, маяками возрождения Respawn Beacon и баннерными картами союзников.
+<br>Время восстановления способности 40 секунд<br>
+<br>ПАССИВКА	
+<br>НЕЙРОЛИНК
+<br>Описание: Крипто и его товарищи по команде видят, что обнаруживает его беспилотник наблюдения на расстоянии до 30 метров.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ЭМИ от ДРОНА
+<br>Описание: Зарядите ЭМИ от своего дрона. Взрыв наносит 50 урона щиту, замедляет игроков и уничтожает ловушки. 
+<br>Время восстановления способности 3 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+		
+<div class="gallery-item">
+    <img src="loba.jpg" alt="Изображение 1">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Лоба</h2>
+            <p>ТАКТИКА
+<br>ЛУЧШИЙ ДРУГ ВЗЛОМЩИКА
+<br>Описание: телепортируйтесь в труднодоступные места или быстро спасайтесь от неприятностей, бросив браслет с прыжковым приводом.
+<br>Время восстановления способности 25 секунд<br>
+<br>ПАССИВКА	
+<br>СЛЕДИТЕ ЗА КАЧЕСТВОМ
+<br>Описание: близлежащую эпическую и легендарную добычу можно увидеть сквозь стены. Ассортимент такой же, как и в бутике Black Market Black Market Boutique.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>БУТИК ЧЕРНОГО РЫНКА
+<br>Описание: поместите в свой инвентарь портативное устройство, позволяющее телепортировать близлежащую добычу. 
+<br>Каждая дружественная или вражеская легенда может взять до двух предметов.
+<br>Время восстановления способности 2,5 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="revenant.jpg" alt="Ревенант">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Ревенант</h2>
+            <p>ТАКТИКА
+<br>БРОСОК ТЕНИ
+<br>Описание: совершите мощный бросок вперед. Удерживайте, чтобы зарядить на большее расстояние.
+<br>Время восстановления способности 25 секунд<br>
+<br>ПАССИВКА	
+<br>ИНСТИНКТ УБИЙЦЫ
+<br>Описание: выделены видимые поблизости враги, у которых мало здоровья. Вы быстрее передвигаетесь на корточках и улучшенное лазание по стенам.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>КОВАНЫЕ ТЕНИ
+<br>Описание: Создайте вокруг себя теневой щит, который блокируют урон. Ваш теневой щит и тактика обновляются при нокдаунах. 
+<br>Время восстановления способности 2 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="ash.jpg" alt="Эш">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Эш</h2>
+            <p>ТАКТИКА
+<br>ДУГОВАЯ ЛОВУШКА
+<br>Описание Бросьте вращающуюся ловушку, которая наносит урон и связывает первого врага, который подойдет слишком близко.
+<br>Время восстановления способности 20 секунд<br>
+<br>ПАССИВКА	
+<br>ПОМЕТКА СМЕРТИ
+<br>Описание: На карте Эш показано расположение последних ящиков смерти.Нажмите на ящик смерти, чтобы отметить выживших нападавших (один раз на ящик).<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ВЗЛОМ ФАЗЫ
+<br>Описание: Откройте односторонний портал в выбранное место.
+<br>Время восстановления способности 2 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Pathfinder.jpg" alt="Пат">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Патфайндер</h2>
+            <p>ТАКТИКА
+<br>ЗАХВАТЫВАЮЩИЙ КРЮК
+<br>Описание крюк позволяет быстро добраться до недоступных мест.
+<br>Время восстановления способности 10-30 секунд<br>
+<br>ПАССИВКА	
+<br>ИНСАЙДЕРСКАЯ ИНФОРМАЦИЯ
+<br>Описание: Отсканируйте посылку, чтобы сократить время восстановления способности зиплайн<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ЗИПЛАЙН
+<br>Описание: создайте зиплайн для всех желающих.
+<br>Время восстановления способности 3 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Wraith.jpg" alt="Рейф">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Рейф</h2>
+            <p>ТАКТИКА
+<br>В ПУСТОТУ
+<br>Быстро перемещайтесь по безопасному пространству пустоты, избегая любого урона.
+<br>Время восстановления способности 25 секунд<br>
+<br>ПАССИВКА	
+<br>ГОЛОСА ИЗ ПУСТОТЫ
+<br>Описание: Голос предупреждает вас о приближении опасности. Насколько вы можете судить, он на вашей стороне.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ПРОСТРАНСТВЕННЫЙ РАЗЛОМ
+<br>Описание: Свяжите два места порталами на 45 секунд, позволяя любому воспользоваться ими.
+<br>Время восстановления способности 3 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Wattson.jpg" alt="Ваттсон">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Ваттсон</h2>
+            <p>ТАКТИКА
+<br>ОХРАНА ПЕРИМЕТРА
+<br>Создавайте электрифицированные заборы, соединяя узлы. Заборы наносят урон и замедляют врагов.
+<br>Время восстановления способности 15 секунд<br>
+<br>ПАССИВКА	
+<br>ИСКРА ГЕНИЯ
+<br>Описание: ультимативная подзарядка полностью заряжает ультимейт Уоттсон, и она может носить с собой больше ультимативных подзарядок. Уоттсон медленно восстанавливает свои щиты с течением времени.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ПИЛОН ПЕРЕХВАТА
+<br>Описание: установливает пилон, который восстанавливает щиты и уничтожает снаряды. Нахождение рядом с ним увеличивает скорость перезарядки тактики.
+<br>Время восстановления способности 3 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="Octane.jpg" alt="Октан">
+    <div class="overlay">
+        <div class="overlay-content">
+				<h2>Октейн</h2>
+            <p>ТАКТИКА
+<br>СТИМ
+<br>Увеличивает скорость ходьбы на 30% и скорость спринта на 40% на 6 секунд. Затрачивает здоровье на использование.
+<br>Время восстановления способности 1 секунда<br>
+<br>ПАССИВКА	
+<br>САМОРЕГЕНИРАЦИЯ
+<br>Описание: Автоматически восстанавливает здоровье с течением времени.<br>
+<br>УЛЬТИМАТИВНАЯ
+<br>ПРЫЖКОВАЯ ПЛОЩАДКА
+<br>Описание: Разверните площадку для прыжков, которая подбросит любого в воздух. Нажмите кнопку прыжка, чтобы совершить двойной прыжок.
+<br>Время восстановления способности 1.5 минуты
+</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('#worst-link').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Здесь вы можете изменить фон и размытие для первого файла
+        document.body.style.transition = 'background 0.5s ease, filter 0.5s ease';
+
+        document.body.style.background = 'linear-gradient(to right, #924e45, #4e5f8b)'; /* Новый фон для первого файла */
+        document.body.style.filter = 'blur(5px)'; /* Новое размытие для первого файла */
+
+        setTimeout(function () {
+            window.location.href = 'worst.html'; // Переход на первый файл
+        }, 500); // 500 миллисекунд - время анимации
+    });
+
+    document.querySelector('#mid-link').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Здесь вы можете изменить фон и размытие для второго файла
+        document.body.style.transition = 'background 0.5s ease, filter 0.5s ease';
+
+        document.body.style.background = 'linear-gradient(to right, #924e45, #4e5f8b)'; /* Новый фон для второго файла */
+        document.body.style.filter = 'blur(8px)'; /* Новое размытие для второго файла */
+
+        setTimeout(function () {
+            window.location.href = 'mid.html'; // Переход на второй файл
+        }, 500);
+    });
+</script>
+</body>
+</html>
